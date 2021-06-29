@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Inria+Sans:ital@1&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -o-user-select: none;
+}
+
+body {
+    font-family: 'Inria Sans', sans-serif;
+}
+
+.fent,
+.lent {
+    height: 100vh;
+    width: 100%;
+}
+
+select,
+button {
+    cursor: pointer;
+}
+
+ul,
+li {
+    list-style-type: none;
+}
+
+::-webkit-progress-bar {
+    background-color: #e1e1e1;
+}
+
+::-webkit-progress-value {
+    background: linear-gradient(45deg, transparent 33%, rgba(0, 0, 0, .1) 33%, rgba(0, 0, 0, .1) 66%, transparent 66%);
+    background-color: #03e00e;
+    background-size: 40px 20px;
+}
+
+progress {
+    margin-top: 5px;
+    appearance: none;
+    width: 100%;
+    height: 18px;
+    display: none;
+}
+
+br,
+hr {
+    display: block;
+    content: "";
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#konvertalas {
+    margin-top: 7px;
+    margin-left: 130px;
+    width: 150px;
+    font-size: 23px;
+}
+
+#link {
+    width: 80%;
+    background: #cbccce;
+    font: inherit;
+    border-radius: 3px;
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, .1);
+    border: 0;
+    outline: 0;
+}
+
+.fent {
+    background-color: #ecedf0;
+}
+
+.nagydoboz {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.nagydoboz label {
+    margin: 42px;
+}
+
+.fentidoboz {
+    padding: 4px;
+    width: 50%;
+    margin: 0 auto;
+    border-radius: 4px;
+    border-color: rgb(104, 104, 104);
+    background-color: #ebebeb;
+    border-style: solid;
+    border-left-style: none;
+    border-right-style: none;
+    border-width: 2px;
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, .5);
+}
+
+.bemenet {
+    padding: 10px;
+}
+
+.lent {
+    background-color: #e1e2e6;
+    overflow: hidden;
+    display: none;
+}
+
+#hely_valasztas {
+    width: 100px;
+}
+
+#nincsmegadva {
+    color: red;
+}
+
+#megadva {
+    text-decoration: none solid;
+}

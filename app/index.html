@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="shortcut icon" href="src/img/ikon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="src/gorgo.css">
+    <link rel="stylesheet" href="src/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Konverter</title>
+</head>
+
+<body>
+    <section id="fent" class="fent">
+        <h1 style="text-align: center; margin: 3%; font-size: 35px;">YouTube Videó Konverter</h1>
+        <div class="fentidoboz">
+            <br>
+            <hr>
+            <div class="bemenet">
+                <label style="font-size: 20px; margin-right: 10px;" for="link">LINK: </label>
+                <input name="link" placeholder="Másold be a videó URL-jét" type="text" id="link">
+            </div>
+            <div class="bemenet">
+                <div class="nagydoboz">
+
+                    <div class="kisdoboz">
+                        <label style="font-size: 20px;" name="formatum" for="formatum">Formátum: </label><br>
+                        <select id="formatum">
+                            <option value="semmi">Választás</option>
+                            <option value=".mp3">MP3</option>
+                            <option value=".mp4">MP4</option>
+                        </select>
+                    </div>
+
+                    <div class="kisdoboz">
+                        <label style="font-size: 20px;" for="hely">Letöltés helye: </label><br>
+                        <button name="hely" id="hely_valasztas">Választás</button>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="bemenet">
+                <h3>Beállítások</h3>
+                <li>
+                    <ul id="videolink_kijelzo">Videó linkje: <span id="nincsmegadva">Nincs megadva</span></ul>
+                    <ul id="hely_kijelzo">Letöltés helye: <span id="nincsmegadva">Nincs megadva</span></ul>
+                    <ul id="formatum_kijelzo">Formátum: <span id="nincsmegadva">Nincs megadva</span></ul>
+                    <br>
+                    <hr>
+                    <ul><button id="konvertalas">Konvertálás</button></ul>
+                    <ul><progress id="folyamat" max="1" value="0"></progress></ul>
+                </li>
+            </div>
+            <hr>
+            <br>
+        </div>
+        <p style="position: relative; top: 10px;">Készítette: Ris#2928</p>
+    </section>
+
+
+    <section id="lent" class="lent">
+        <h1 style="text-align: center; margin: 2%; font-size: 25px;">Utoljára konvertált videó</h1>
+        <div class="fentidoboz">
+            <br>
+            <hr>
+
+            <div class="bemenet adatai">
+                <h3>Videó adatai</h3>
+                <li>
+                    <ul id="videoneve_kijelzo">Videó neve: </ul>
+                    <ul id="feltolto_kijelzo">Feltöltő: </ul>
+                    <ul id="feltoltve_kijelzo">Feltöltve ekkor: </ul>
+                    <ul id="megtekintesek_kijelzo">Megtekintések: </ul>
+                    <ul id="hossza_kijelzo">Videó hossza: </ul>
+                </li>
+                <p style="text-align: center;"><img draggable="false" id="indexkep_kijelzo" width="250" height="150"></p>
+            </div>
+
+            <hr>
+            <div class="nagydoboz">
+                <div class="kisdoboz">
+                    <button id="mappamegnyitasa" style="margin: 5px;">Mappa megnyitása</button>
+                </div>
+                <div class="kisdoboz">
+                    <button onclick="fent.scrollIntoView({ behavior: 'smooth' })" style="margin: 5px;">Új videó könvertálása</button>
+                </div>
+            </div>
+            <br>
+            <hr>
+        </div>
+
+    </section>
+
+    <script src="src/script.js"></script>
+</body>
+
+</html>

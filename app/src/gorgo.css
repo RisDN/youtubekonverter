@@ -1,0 +1,16 @@
+::-webkit-scrollbar {
+    width: 10px;
+    cursor: pointer;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(98, 98, 98);
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+::-webkit-scrollbar-track {
+    background: #ddd;
+    border-radius: 20px;
+    cursor: pointer;
+}
